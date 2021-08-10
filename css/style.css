@@ -201,6 +201,44 @@ body {
   letter-spacing: 0.03em;
   color: var(--link-color);
 }
+/* =============MODAL WINDOW============= */
+.modal-description {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--link-color);
+  margin: 40px 40px 30px 40px;
+}
+.modal-form {
+  /* outline: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.form-label {
+  display: flex;
+  flex-direction: column;
+}
+.label-description {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.label-input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-right: 40px;
+  height: 40px;
+}
+.comment {
+  resize: none;
+  height: 120px;
+}
 /*============main page team============*/
 .our-team h2 {
   font-weight: 700;
