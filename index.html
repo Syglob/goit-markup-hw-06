@@ -83,23 +83,37 @@
             </button>
             <div class="modal-input-date">
               <h4 class="modal-description">Оставьте свои данные, мы вам перезвоним</h3>
-                <form class="modal-form">
-                  <label class="form-label">
+                <form class="modal-form" name="subscribe" autocomplete="on" >
+                  <label class="form-label" >
                     <span class="label-description">Имя</span>
                     <input class="label-input" type="text" name="username">
+                    <svg class="modal-svg">
+                      <use href="./img/svg_img/sprites.svg#icon-user_icon" width="18px"></use>
+                    </svg>
                   </label>
-                  <label class="form-label">
+                  <label class="form-label" >
                     <span class="label-description">Телефон</span>
-                    <input class="label-input" type="phone">
+                    <input class="label-input" type="number" name="phone_number" >
+                    <svg class="modal-svg">
+                      <use href="./img/svg_img/sprites.svg#icon-call_back" width="18px"></use>
+                    </svg>
                   </label>
                   <label class="form-label">
                     <span class="label-description">Почта</span> 
-                    <input class="label-input" type="mail">
+                    <input class="label-input" type="email" name="email" >
+                    <svg class="modal-svg">
+                      <use href="./img/svg_img/sprites.svg#icon-mail_re" width="18px"></use>
+                    </svg>
                   </label>
                   <label class="form-label">
                     <span class="label-description">Комментарий</span>
                   <textarea class="label-input comment" name="feedback"rows="5" placeholder="Введите текст"></textarea>
                 </label>
+                <div  class="form-checkbox">
+                  <input class="checkbox" type="checkbox" name="agree">
+                  <p class="checkbox-description" >Соглашаюсь с рассылкой и принимаю <a class="checkbox-license" href="#">Условия договора</a></p>
+                </div>
+                    <button class="submit-btn" type="submit">Отправить</button>
                 </form>
             </div>
           </div>
@@ -398,6 +412,13 @@
             </li>
           </ul>
         </div>
+        <div class="submit-footer">
+          <h3 class="footer-submit-text">Подпишитесь на рассылку</h3>
+        <div class="submit-wrapper">
+          <input class="submit-inpute" type="text" name="submit" placeholder="E-mail">
+          <button class="submit-btn-footer" type="submit" name="submit">Подписаться</button>
+        </div>
+      </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
