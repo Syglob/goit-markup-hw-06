@@ -124,6 +124,7 @@ body {
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --overlay-bg-color: rgba(33, 150, 243, 0.9);
+  --label-border-color: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 /*==============main-page==============*/
@@ -256,6 +257,7 @@ body {
 .close-btn-svg:focus {
   fill: var(--link-active-color);
   transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 .modal-input-date {
   margin-left: auto;
@@ -289,7 +291,7 @@ body {
   margin-top: 10px;
 }
 .label-input {
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: var(--label-border-color);
   border-radius: 4px;
   height: 40px;
   padding-left: 40px;
@@ -309,7 +311,6 @@ body {
 }
 .checkbox {
   appearance: none;
-  /* position: absolute; */
 }
 .checkbox-agree {
   display: flex;
@@ -330,7 +331,7 @@ body {
   background-size: contain;
   background-origin: border-box;
   border-radius: 4px;
-  transition-duration: 250ms;
+  transition-duration: var(--transition-duration);
 }
 
 .checkbox-description {
@@ -364,6 +365,7 @@ body {
   background-color: #1e85da;
   box-shadow: inset -1px 1px 9px 8px rgb(0 0 0 / 10%);
   transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 .modal-svg {
   position: absolute;
