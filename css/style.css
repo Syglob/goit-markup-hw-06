@@ -306,6 +306,32 @@ body {
   align-items: center;
   justify-content: center;
 }
+.checkbox {
+  appearance: none;
+  /* position: absolute; */
+}
+.checkbox-agree {
+  display: flex;
+  align-items: center;
+}
+.check-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--link-color);
+  border-radius: 4px;
+}
+
+.checkbox:checked + .check-icon {
+  border-color: var(--link-active-color);
+  background-color: var(--link-active-color);
+  background-image: url(../img/svg_img/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-radius: 4px;
+  transition-duration: 250ms;
+}
+
 .checkbox-description {
   margin-left: 10px;
 }
@@ -884,8 +910,7 @@ footer {
   color: var(--white-color);
 }
 .submit-footer {
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 90px;
   margin-top: 15px;
 }
 .submit-inpute {
@@ -896,14 +921,19 @@ footer {
   background-color: var(--background-color);
   padding-left: 16px;
   margin-right: 16px;
+  color: var(--white-color);
+}
+.submit-wrapper {
+  display: flex;
+  margin-top: 20px;
 }
 .submit-btn-footer {
+  position: relative;
+  display: flex;
+  align-items: center;
   width: 200px;
   height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  padding: 10px 30px;
   background-color: var(--link-active-color);
   color: var(--white-color);
   font-weight: 700;
@@ -911,6 +941,14 @@ footer {
   line-height: 30px;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.send-svg {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-100%, 50%);
 }
 .submit-btn-footer:hover,
 .submit-btn-footer:focus {
