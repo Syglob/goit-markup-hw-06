@@ -330,6 +330,8 @@ body {
 .checkbox:hover {
   border: 1px solid var(--link-active-color);
   border-radius: 4px;
+  transition-duration: var(--transition-duration);
+  cursor: pointer;
 }
 .checkbox:checked + .check-icon {
   border-color: var(--link-active-color);
