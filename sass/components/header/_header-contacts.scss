@@ -1,0 +1,57 @@
+/*============mail============*/
+.contacts {
+    &__mail,
+    &__phone {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $text-color;
+        display: flex;
+        align-items: center;
+        transition: $animation-250ms;
+        margin-right: 30px;
+    }
+}
+
+.mail__svg {
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    fill: $text-color;
+}
+.contacts__mail:hover .mail__svg,
+.contacts__mail:focus .mail__svg {
+    fill: $link-active-color;
+}
+
+.contacts__mail:hover,
+.contacts__mail:focus {
+    color: $link-active-color;
+}
+
+/*==========contacts==========*/
+
+.phone__svg {
+    height: 16px;
+    width: 10px;
+    margin-right: 10px;
+    fill: $text-color;
+}
+
+.contacts__phone:focus .phone__svg,
+.contacts__phone:hover .phone__svg {
+    fill: $link-active-color;
+}
+
+.contacts__phone:hover,
+.contacts__phone:focus {
+    color: $link-active-color;
+}
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+.mail {
+    margin-right: 50px;
+}

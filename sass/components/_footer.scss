@@ -1,0 +1,110 @@
+footer {
+    padding: 60px 0;
+}
+.footer {
+    display: flex;
+}
+.test-footer {
+    display: inline-block;
+    margin-right: 70px;
+}
+.contacts-footer {
+    display: flex;
+    flex-direction: column;
+}
+.contacts-footer li:not(:last-child) {
+    margin-bottom: 9px;
+}
+/*=============footer social link==========*/
+.footer-socia-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+    margin-bottom: 20px;
+}
+.footer-social {
+    margin-top: 15px;
+}
+.footer-socia-list {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-social-svg {
+    width: 20px;
+    height: 20px;
+    fill: $white-color;
+}
+.footer-social-link {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: $link-active-color;
+    transition-duration: $transition-duration;
+}
+/* submit */
+.footer-submit-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+}
+.submit-footer {
+    margin-left: 90px;
+    margin-top: 15px;
+}
+.submit-inpute {
+    height: 50px;
+    width: 358px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: $background-color;
+    padding-left: 16px;
+    margin-right: 16px;
+    color: $white-color;
+}
+.submit-wrapper {
+    display: flex;
+    margin-top: 20px;
+}
+.submit-btn-footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding: 10px 30px;
+    background-color: $link-active-color;
+    color: $white-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.send-svg {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-100%, 50%);
+}
+.submit-btn-footer:hover,
+.submit-btn-footer:focus {
+    background-color: #1e85da;
+    box-shadow: inset -1px 1px 9px 8px rgb(0 0 0 / 10%);
+    transition-duration: $transition-duration;
+}

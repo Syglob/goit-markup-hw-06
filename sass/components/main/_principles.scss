@@ -1,0 +1,56 @@
+.principles__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $link-color;
+}
+.principles__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $text-color;
+}
+
+.principles {
+    padding-top: 94px;
+}
+.principles__item:not(:last-child) {
+    margin-right: 30px;
+}
+.principles__list {
+    display: flex;
+    justify-content: center;
+}
+
+.principles__item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-color: $button-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.principles__item--antenna::before {
+    background-image: url(../img/svg_img/advan/antenna.svg);
+}
+.principles__item--clock::before {
+    background-image: url(../img/svg_img/advan/clock.svg);
+}
+
+.principles__item--diagram::before {
+    background-image: url(../img/svg_img/advan/diagram.svg);
+}
+
+.principles__item--astronaut::before {
+    background-image: url(../img/svg_img/advan/astronaut.svg);
+}
+
+.principles__text {
+    margin-top: 10px;
+}

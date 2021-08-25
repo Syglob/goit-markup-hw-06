@@ -1,0 +1,107 @@
+.navigation .link {
+    color: $link-color;
+    transition: $animation-250ms;
+}
+.navigation .link:hover,
+.navigation .link:focus {
+    color: $link-active-color;
+}
+.navigation .link.current {
+    color: $link-active-color;
+}
+
+.site-nav .link {
+    position: relative;
+}
+
+.link.current::after {
+    content: "";
+    display: block;
+    background-color: $link-active-color;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: -33px;
+}
+
+.navigation {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    margin-left: 93px;
+}
+/*============mail============*/
+.mail,
+.phone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    transition: $animation-250ms;
+}
+
+.svg-mail {
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    fill: $text-color;
+}
+
+.mail:hover .svg-mail,
+.mail:focus .svg-mail {
+    fill: $link-active-color;
+}
+
+.mail:hover,
+.mail:focus {
+    color: $link-active-color;
+}
+
+/*==========contacts==========*/
+
+.svg-phone {
+    height: 16px;
+    width: 10px;
+    margin-right: 10px;
+    fill: $text-color;
+}
+
+.phone:focus .svg-phone,
+.phone:hover .svg-phone {
+    fill: $link-active-color;
+}
+
+.phone:hover,
+.phone:focus {
+    color: $link-active-color;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+}
+.header {
+    padding-top: 25px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $line-color;
+}
+.site-nav {
+    display: flex;
+}
+
+.site-nav .text:not(:last-child) {
+    margin-right: 50px;
+}
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+.mail {
+    margin-right: 50px;
+}

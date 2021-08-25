@@ -1,0 +1,48 @@
+.about__text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $link-color;
+}
+
+.about {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 94px 0;
+}
+
+.about__list {
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    z-index: -1;
+}
+
+.about__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.about__card {
+    position: relative;
+}
+
+.about__overlay {
+    position: absolute;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+    background: rgba(47, 48, 58, 0.8);
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+    bottom: 0;
+    width: 100%;
+}

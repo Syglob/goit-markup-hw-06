@@ -1,0 +1,23 @@
+.button-request {
+    background-color: $link-active-color;
+    border: none;
+    color: $button-color;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 32px 10px 32px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-top: 33px;
+    transition: $animation-250ms, background-color $animation-250ms;
+}
+.button-request:hover,
+.button-request:focus {
+    background-color: #1e85da;
+    box-shadow: inset -1px 1px 9px 8px rgb(0 0 0 / 10%);
+    transition-duration: $transition-duration;
+}

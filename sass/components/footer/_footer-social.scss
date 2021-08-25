@@ -1,0 +1,36 @@
+.footer-socia__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+    margin-bottom: 20px;
+}
+.footer-social {
+    margin-top: 15px;
+}
+.footer-socia__list {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-social__svg {
+    width: 20px;
+    height: 20px;
+    fill: $white-color;
+}
+.footer-social__link {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.footer-social__link:hover,
+.footer-social__link:focus {
+    background-color: $link-active-color;
+    transition-duration: $transition-duration;
+}

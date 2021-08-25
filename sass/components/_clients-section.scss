@@ -1,0 +1,45 @@
+.clients-section {
+    padding: 94px 0;
+}
+.clients-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $link-color;
+
+    margin-bottom: 50px;
+}
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+.clients-list svg {
+    fill: $social-icon-color;
+    width: 106px;
+    height: 60px;
+}
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+}
+.clients-link:hover .clients-svg,
+.clients-link:focus .clients-svg {
+    fill: $link-active-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+}
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid $link-active-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+}
